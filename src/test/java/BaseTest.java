@@ -31,9 +31,9 @@ public class BaseTest {
 
  /* Response response = given()
             .auth()
-            .basic("yaani_elk_user", "Pass_971")
+            .basic("username", "sifre")
             .when()
-            .get("http://172.18.4.41:9200/web-images-tr-210608/_search");
+            .get("url");
 
     List<Object> pageUrl = response.jsonPath().getList("hits.hits._source.pageUrl");
 */
