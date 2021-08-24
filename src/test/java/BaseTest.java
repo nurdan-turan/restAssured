@@ -24,15 +24,18 @@ import static org.testng.Assert.assertEquals;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ExtendWith(TestResultsLog.class)
 
 public class BaseTest {
     WebDriver driver ;
 
-    Response response = given()
+ /* Response response = given()
             .auth()
-            .basic("user", "12345")
+            .basic("yaani_elk_user", "Pass_971")
             .when()
-            .get("basic_url");
+            .get("http://172.18.4.41:9200/web-images-tr-210608/_search");
 
     List<Object> pageUrl = response.jsonPath().getList("hits.hits._source.pageUrl");
+*/
+
 }

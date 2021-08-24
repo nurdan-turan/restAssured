@@ -29,9 +29,10 @@ public class FindImagePage extends BasePage {
 
     public void getImageName(){
         List<WebElement> elementList =driver.findElements(imageLocator);
-        for(int i=0; i<myElements.size(); i++){
+        for(int i=0; i<elementList.size(); i++){
             System.out.println((i+1) + ".Image Linki -->  "+elementList.get(i).getAttribute("src"));
-            System.out.println((i+1) + ".Image Başlığı -->  "+elementList.get(i).getAttribute("alt"));
+
+            //System.out.println((i+1) + ".Image Başlığı -->  "+elementList.get(i).getAttribute("alt"));
 
             //System.out.println(i + ".Image Başlığı -->  "+elementList.get(i).getAttribute("href"));
 
