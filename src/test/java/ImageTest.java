@@ -80,9 +80,9 @@ public class ImageTest extends BaseTest {
 
         Response addBooksResponse = request.body(request_Body)
                 .auth()
-                .basic("yaani_elk_user", "Pass_971")
+                .basic("username", "sıfre")
                 .when()
-                .get("http://172.18.4.41:9200/web-images-tr-210608/_search");
+                .get("url");
 
         try{
 
